@@ -55,7 +55,7 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl lg:text-5xl xl:text-6xl mb-6">
-              I'm <span className="text-yellow-400">Gaurav Singh Kushwaha</span>
+              I&apos;m <span className="text-yellow-400">Gaurav Singh Kushwaha</span>
               ,<br />
               Product Designer
               <br />
