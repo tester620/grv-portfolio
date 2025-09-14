@@ -117,11 +117,16 @@ export default function HeroSection() {
                 </span>
               </div>
             </div>
+            <div className="absolute bottom-20 right-0 bg-white rounded-full px-4 py-2 shadow-lg">
+                <span className="text-sm font-semibold text-gray-900">
+                  Product Designer
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
 
         {/* Bottom Section */}
-        <div className="mt-16 flex flex-wrap justify-center lg:justify-between items-center gap-8 text-center lg:text-left">
+        <div className="mt-16 flex flex-wrap w-full justify-between items-center gap-8 text-center lg:text-left">
           <div className="flex flex-wrap gap-8 justify-space between">
             <div className="bg-yellow-50 px-4 py-2 rounded-lg">
               <span className="text-sm font-medium">App Design</span>

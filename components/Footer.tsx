@@ -1,17 +1,30 @@
-import { Github, Linkedin, Mail, Phone, MapPin, Camera } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { FaBehance, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <Github size={20} />, href: "https://github.com/", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/gaurav-singh-kushwaha-241b011a1", label: "LinkedIn" },
-    { icon: <Camera size={20} />, href: "https://github.com/", label: "Twitter" }
+    {
+      icon: <FaGithub size={20} />,
+      href: "https://github.com/kushwahagaurav",
+      label: "GitHub",
+    },
+    {
+      icon: <FaLinkedin size={20} />,
+      href: "https://www.linkedin.com/in/gaurav-singh-kushwaha-241b011a1",
+      label: "LinkedIn",
+    },
+    {
+      icon: <FaBehance size={20} />,
+      href: "https://www.behance.net/gauravkushwaha19",
+      label: "Behance",
+    },
   ];
 
   const quickLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
-    { name: "Projects", href: "#projects" }
+    { name: "Projects", href: "#projects" },
   ];
 
   return (
@@ -27,7 +40,8 @@ export default function Footer() {
               <span className="font-semibold text-white">Gaurav Singh</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              Product Designer specialized in UI/UX design and digital experiences.
+              Product Designer specialized in UI/UX design and digital
+              experiences.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -95,7 +109,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Gaurav Singh. All rights reserved.
+            © {new Date().getFullYear()} Gaurav Singh. All rights reserved.
           </p>
         </div>
       </div>

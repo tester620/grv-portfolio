@@ -1,14 +1,47 @@
+import { DiCss3, DiHtml5, DiPhotoshop } from "react-icons/di";
+import { FaCss3, FaHtml5 } from "react-icons/fa";
+import { PiFigmaLogo, PiNotionLogo } from "react-icons/pi";
+import { RiJavascriptFill } from "react-icons/ri";
 
 export default function ToolsSection() {
   const tools = [
-  { name: "Figma", percentage: 98, color: "bg-pink-500", icon: "🎨" },       
-  { name: "Photoshop", percentage: 90, color: "bg-blue-600", icon: "🖌️" },  
-  { name: "Notion", percentage: 85, color: "bg-gray-800", icon: "📒" },     
-  { name: "HTML", percentage: 92, color: "bg-orange-500", icon: "🌐" },     
-  { name: "CSS", percentage: 90, color: "bg-blue-500", icon: "🎨" },        
-  { name: "JavaScript", percentage: 95, color: "bg-yellow-400", icon: "⚡" }
-];
-
+    {
+      name: "Figma",
+      percentage: 98,
+      color: "bg-pink-500",
+      icon: <PiFigmaLogo color="#ec4899" />,
+    },
+    {
+      name: "Photoshop",
+      percentage: 90,
+      color: "bg-blue-600",
+      icon: <DiPhotoshop color="#2563eb" />,
+    },
+    {
+      name: "Notion",
+      percentage: 85,
+      color: "bg-gray-800",
+      icon: <PiNotionLogo color="#1f2937" />,
+    },
+    {
+      name: "HTML",
+      percentage: 92,
+      color: "bg-orange-500",
+      icon: <FaHtml5 color="#f97316" />,
+    },
+    {
+      name: "CSS",
+      percentage: 90,
+      color: "bg-blue-500",
+      icon: <FaCss3 color="#3b82f6" />,
+    },
+    {
+      name: "JavaScript",
+      percentage: 95,
+      color: "bg-yellow-400",
+      icon: <RiJavascriptFill color="#facc15" />,
+    },
+  ];
 
   return (
     <section className="py-20 bg-white">
@@ -19,18 +52,23 @@ export default function ToolsSection() {
             <span className="text-sm text-gray-600">— My Favorite Tools</span>
           </div>
           <h2 className="text-3xl lg:text-4xl mb-4">
-            <span className="text-yellow-400">Exploring the Tools</span><br />
+            <span className="text-yellow-400">Exploring the Tools</span>
+            <br />
             Behind My Designs
           </h2>
         </div>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 w-full md:grid-cols-3 lg:grid-cols-6 gap-8">
           {tools.map((tool, index) => (
-            <div key={index} className="text-center group">
-              <div className="bg-gray-50 rounded-2xl p-6 mb-4 group-hover:shadow-md transition-shadow">
-                <div className="text-3xl mb-4">{tool.icon}</div>
-                <div className="text-2xl font-bold text-gray-900 mb-2">{tool.percentage}%</div>
+            <div key={index} className="text-center group w-full">
+              <div className="bg-gray-50 rounded-2xl p-6 mb-4 group-hover:shadow-md w-full transition-shadow">
+                <div className="text-3xl mb-4 flex items-center justify-center w-full">
+                  {tool.icon}
+                </div>
+                <div className="text-2xl font-bold text-gray-900 mb-2">
+                  {tool.percentage}%
+                </div>
                 <div className="w-full bg-gray-200 rounded-full h-2 mb-3">
                   <div
                     className={`h-2 rounded-full ${tool.color}`}
