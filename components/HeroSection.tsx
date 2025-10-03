@@ -89,9 +89,9 @@ export default function HeroSection() {
           <div className="flex-1 relative">
             <div className="relative">
               {/* Main Image */}
-              <div className="relative w-[400px] h-[400px] mx-auto">
+              <div className="relative max-w-screen sm:w-[400px] h-[400px] mx-auto">
                 <ImageWithFallback
-                  src="https://ik.imagekit.io/ancestor/myImage_244dAq3cs.jpg?w=484&q=100"
+                  src="/hero-profile.svg"
                   alt="Gaurav Singh"
                   className="w-full h-full object-cover"
                 />
@@ -126,8 +126,8 @@ export default function HeroSection() {
           </div>
 
         {/* Bottom Section */}
-        <div className="mt-16 flex flex-wrap w-full justify-between items-center gap-8 text-center lg:text-left">
-          <div className="flex flex-wrap gap-8 justify-space between">
+        <div className="mt-16 flex w-full justify-center items-center text-center">
+          <div className="flex flex-wrap w-full gap-8 justify-start lg:justify-between">
             <div className="bg-yellow-50 px-4 py-2 rounded-lg">
               <span className="text-sm font-medium">App Design</span>
             </div>

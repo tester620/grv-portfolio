@@ -60,11 +60,11 @@ export default function AboutSection() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left - Image */}
             <div className="flex-1">
-              <div className="relative w-80 h-80 mx-auto">
+              <div className="relative w-96 h-96 mx-auto">
                 <div className="absolute inset-0 bg-yellow-400 rounded-full"></div>
                 <div className="absolute inset-4 rounded-full overflow-hidden bg-gray-500">
                   <ImageWithFallback
-                    src="https://ik.imagekit.io/ancestor/myImage_244dAq3cs.jpg?w=384&q=100"
+                    src="/ProfilePicture.png"
                     alt="Gaurav Singh Kushwaha"
                     className="w-full h-full object-cover"
                   />

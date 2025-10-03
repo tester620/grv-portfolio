@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Button } from "./ui/button";
 
 import { ImageWithFallback } from "./fallback/ImageWithFallback";
@@ -9,32 +9,39 @@ export default function Projects() {
     {
       id: 1,
       title: "Ancestropedia- Build your family tree",
-      category: "Web App",
-      link: "https://ancestropedia.com",
+      description:
+        "A genealogy platform that lets users explore, build, and preserve their family heritage. Features interactive family trees, seamless navigation, and engaging visuals to make discovering ancestral connections intuitive and enjoyable.",
+      liveLink: "https://ancestropedia.com",
       image: "/ancestropedia.png",
       tags: ["UI/UX Design", "App Design", "Product Design"],
     },
     {
       id: 2,
-      title: "Classic Volt- OTT App for classic movies",
-      category: "Mobile App",
-      image:
-        "https://images.unsplash.com/photo-1657812159055-7bae416f386d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBsYW5kaW5nJTIwcGFnZXxlbnwxfHx8fDE3NTc0Njk1NzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["UI/UX Design", "App Design", "Wireframe"],
+      title: "Ancestropedia – Admin Management System",
+      description:
+        "A comprehensive admin dashboard for Ancestropedia, allowing super admins and executive admins to manage the platform dynamically. Features include token management, user management, cloud storage oversight, and business analytics, providing full control over the platform’s operations.",
+      image: "/ancestropedia-admin.png",
+      tags: [
+        "UI/UX Design",
+        "App Design",
+        "Wireframe",
+        "SaaS Application Design",
+      ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Leadsmart - Lead Management SAAS Web App",
-      category: "SAAS Dashboard",
+      description:
+        "A SaaS lead management platform for automotive sales teams, enabling sales executives to update tasks while managers can track, visualize, and efficiently manage team assignments through an intuitive interface.",
       image: "/leadSmart.png",
       tags: ["UI/UX Design", "Web Design", "Wireframe"],
     },
     {
-      id: 4,
-      title: "Ethnic Cart- An E-Commerce mobile app for Ethnic wear",
-      category: "Mobile App",
-      image:
-        "https://images.unsplash.com/photo-1555531469-561be9b3cb17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwbW9iaWxlJTIwYXBwfGVufDF8fHx8MTc1NzUwMTA3M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      id: 3,
+      title: "Classic Volt- OTT App for classic movies",
+      description:
+        "An OTT platform for classic Bollywood movies, designed for middle-aged and older audiences. Delivers a nostalgic cinematic experience with intuitive navigation, curated classics, and a user-friendly interface that brings timeless films to life",
+      image: "/classic-volt.png",
       tags: ["UI/UX Design", "App Design", "Wireframe"],
     },
   ];
@@ -62,12 +69,15 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group cursor-pointer"
-              onClick={() => {
-                if (project?.link) window.location.href = project.link;
-              }}
+              className="snap-start flex flex-col justify-between group cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://www.behance.net/gauravkushwaha19",
+                  "_blank"
+                )
+              }
             >
-              <div className="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
                 <div className="aspect-[4/3] overflow-hidden">
                   <ImageWithFallback
                     src={project.image}
@@ -75,7 +85,7 @@ export default function Projects() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex flex-wrap gap-2 mb-3">
                     {project.tags.map((tag, index) => (
                       <Badge
@@ -87,10 +97,22 @@ export default function Projects() {
                       </Badge>
                     ))}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm">{project.category}</p>
+                  <div className="flex items-start justify-between">
+                    <h3 className="text-lg mr-2 font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">
+                      {project.title}
+                    </h3>
+                    {project?.liveLink && (
+                      <div className="flex items-center justify-center py-1">
+                        <a
+                          href={project.liveLink}
+                          className="text-center text-nowrap text-[10px] font-semibold bg-yellow-400 hover:bg-yellow-500 text-black transition-colors px-[6px] py-[2px] rounded-[2px] "
+                        >
+                          View Live
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-gray-600 text-sm">{project.description}</p>
                 </div>
               </div>
             </div>
