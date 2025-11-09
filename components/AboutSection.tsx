@@ -19,7 +19,7 @@ export default function AboutSection() {
         },
 
         {
-          period: "01/2025 - 03/2025",
+          period: 08/2024 - 03/2025",
           title: "Udemy",
           subtitle: "UI/UX Design, Web & Mobile Apps",
         },
@@ -35,18 +35,23 @@ export default function AboutSection() {
       items: [
         {
           period: "06/2025 - Present",
-          title: "Stelios Consulting",
+          title: "Ancestropedia Pvt. Ltd.",
           subtitle: "UI/UX Designer",
         },
+        // {
+        //   period: "02/2025 - 05/2025",
+        //   title: "Pent IT Solutions",
+        //   subtitle: "UI/UX Design Intern",
+        // },
         {
-          period: "02/2025 - 05/2025",
-          title: "Pent IT Solutions",
-          subtitle: "UI/UX Design Intern",
-        },
-        {
-          period: "06/2024 - 02/2025",
+          period: "06/2024 - 12/2024",
           title: "Cogito Tech",
           subtitle: "Data Annotation Specialist",
+        },
+        {
+          period: "01/2024 - 04/2024",
+          title: "Tele Perfomance",
+          subtitle: "Senior Customer Support Associate",
         },
       ],
     },
