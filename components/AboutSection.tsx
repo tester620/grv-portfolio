@@ -19,7 +19,7 @@ export default function AboutSection() {
         },
 
         {
-          period: 08/2024 - 03/2025",
+          period: "08/2024 - 03/2025",
           title: "Udemy",
           subtitle: "UI/UX Design, Web & Mobile Apps",
         },
