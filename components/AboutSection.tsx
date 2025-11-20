@@ -34,7 +34,7 @@ export default function AboutSection() {
       type: "Work Experience",
       items: [
         {
-          period: "06/2025 - Present",
+          period: "03/2025 - Present",
           title: "Ancestropedia Pvt. Ltd.",
           subtitle: "UI/UX Designer",
         },
