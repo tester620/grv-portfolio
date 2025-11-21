@@ -117,7 +117,7 @@ export default function AboutSection() {
                 ))}
               </div>
 
-              <a href="./GauravUXresume.pdf" target="_blank">
+              <a href="./UI_UX_GauravResume.pdf" target="_blank">
                 <Button className="bg-yellow-400 cursor-pointer hover:bg-yellow-500 text-black px-8 py-3">
                   Download CV
                   <span className="ml-2">→</span>
