@@ -5,7 +5,7 @@ export default function AboutSection() {
   const stats = [
     { number: "5+", label: "Projects Completed" },
     { number: "10+", label: "Happy Customers" },
-    { number: "6+", label: "Months of Experience" },
+    { number: "9+", label: "Months of Experience" },
   ];
 
   const experience = [
@@ -50,7 +50,7 @@ export default function AboutSection() {
         },
         {
           period: "01/2024 - 04/2024",
-          title: "Tele Perfomance",
+          title: "Teleperformance",
           subtitle: "Senior Customer Support Associate",
         },
       ],
