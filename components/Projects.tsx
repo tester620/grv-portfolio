@@ -12,7 +12,7 @@ export default function Projects() {
       description:
         "A genealogy platform that lets users explore, build, and preserve their family heritage. Features interactive family trees, seamless navigation, and engaging visuals to make discovering ancestral connections intuitive and enjoyable.",
       liveLink: "https://ancestropedia.com",
-      image: "/ancestropedia.png",
+      image: "/ancestropedia casestudy 2.png",
       tags: ["UI/UX Design", "App Design", "Product Design"],
     },
     {
