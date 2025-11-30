@@ -64,7 +64,7 @@ export default function HeroSection() {
 
             <p className="text-gray-600 text-lg mb-8 max-w-md mx-auto lg:mx-0">
               I’m a motivated designer with a strong foundation in user-centered
-              design. Over the past 6 months, I’ve gained hands-on experience
+              design. Over the past 9 months, I’ve gained hands-on experience
               across the full design process.
             </p>
 
@@ -100,7 +100,7 @@ export default function HeroSection() {
               {/* Floating Badge */}
               <div className="absolute top-8 right-8 bg-white rounded-full p-4 shadow-lg">
                 <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">6+</span>
+                  <span className="text-black font-bold text-sm">9+</span>
                 </div>
                 <div className="text-center mt-2">
                   <div className="text-xs font-semibold text-gray-900">
